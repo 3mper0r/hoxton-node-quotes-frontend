@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import { AddQuote } from './FormAddQuote'
+import './add-button.css'
 
 function App() {
   const [quotes, setQuotes] = useState([])
@@ -22,12 +24,16 @@ function App() {
     <div className="App">
       <h1>Daily Quotes</h1>
       <ul>
-
         {quotes.map(quotes => (
           <li>{quotes.quote}</li>
         ))}
       </ul>
       <a href='http://localhost:3001/quoteoftheweek'>Qoute of the week</a>
+
+      <a href='http://localhost:3001/add-quote'> <button id='add-quote'>Add your quote</button></a>
+
+      {/* <AddQuote /> */}
+
     </div>
   )
 }

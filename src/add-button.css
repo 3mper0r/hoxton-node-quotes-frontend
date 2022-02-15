@@ -1,0 +1,10 @@
+#add-quote {
+    display: grid;
+    left: 40%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
